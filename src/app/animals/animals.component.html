@@ -1,0 +1,31 @@
+<nav-bar></nav-bar>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Perros en Busca de un Hogar</h2>
+  
+    <div class="row row-cols-3 g-3">
+      <ng-container >
+        @for (animal of animals; track $index){
+      
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{{ animal.url }}" alt="{{ animal.name }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{ animal.name }}</h5>
+              <p class="card-text">
+                <span class="fw-bold">Sexo:</span> {{ animal.sexo }} <br>
+                <span class="fw-bold">Tamaño:</span> {{ animal.tamano }} <br>
+                <span class="fw-bold">Tipo:</span> {{ animal.tipoAnimal }}
+              
+              </p>
+              <a href="#" class="btn btn-primary">Adoptar</a>
+            </div>
+          </div>
+        </div>
+    };
+      </ng-container>
+    </div>
+  </div>
+
+
+

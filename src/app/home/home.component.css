@@ -1,0 +1,13 @@
+
+img.image-with-text { /* Add a class to the image */
+    position: relative;
+  }
+  
+  p.image-text { /* Add a class to the paragraph */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semitransparent background */
+  }

@@ -1,0 +1,25 @@
+  .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    
+      
+    }
+
+    
+    
+
+  .nav-link {
+    color: #000000; 
+    font-weight: 400;
+    
+  }
+
+  .nav-link:hover{
+    color: rgb(28, 170, 123);
+    transform: translateY(-1px); 
+  }
+
+

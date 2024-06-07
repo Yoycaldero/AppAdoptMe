@@ -1,0 +1,24 @@
+<!-- src/app/login/login.component.html --><h2>Login</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Email address</label>
+    <input type="name" class="form-control" id="name" placeholder="Enter name" formControlName="name" required>
+    <div class="invalid-feedback" *ngIf="loginForm?.get('name')?.hasError('required')">
+      Email is required
+    </div>
+    <div class="invalid-feedback" *ngIf="loginForm?.get('name')?.hasError('name')">
+      Enter a valid name
+    </div>
+  </div>
+  
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Enter password" formControlName="password" required>
+    <div class="invalid-feedback" *ngIf="loginForm?.get('password')?.hasError('required')">
+      Password is required
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
